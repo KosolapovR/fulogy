@@ -1,24 +1,34 @@
 import React from 'react';
 import {configureStore} from "./state/store";
+import Container from "@material-ui/core/Container";
+import Header from "./blocks/Header";
+import Main from "./blocks/Main";
+import Footer from "./blocks/Footer";
+import Grid from "@material-ui/core/Grid";
+import {makeStyles} from "@material-ui/core/styles";
+
+const useStyle = makeStyles({
+    root: {
+        height: '100vh',
+    }
+});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const styles = useStyle();
+
+    return (
+        <Grid container className={styles.root} direction={'column'} justify='space-between'>
+            <Grid item>
+                <Header/>
+            </Grid>
+            <Grid item>
+                <Main/>
+            </Grid>
+            <Grid item>
+                <Footer/>
+            </Grid>
+        </Grid>
+    );
 }
 
 export default App;
