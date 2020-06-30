@@ -8,29 +8,30 @@ import Options from "./Options";
 const useStyle = makeStyles({
     root: {
         background: '#fafafa',
-        minHeight: 'calc(100vh - 112px)',
     },
     part: {
         flexBasis: '50%',
-        padding: '8px',
+    },
+    fullHeight: {
     }
-
 });
 
 function Main(props) {
     const styles = useStyle();
 
     return (
-        <Container className={styles.root} maxWidth={'lg'}>
-            <Grid container justify='space-between'>
-                <Grid item className={styles.part}>
-                    <Slider />
+        <main className={styles.root}>
+            <Container maxWidth={'lg'} className={styles.fullHeight}>
+                <Grid className={styles.fullHeight} container justify='space-between'>
+                    <Grid item className={styles.part}>
+                        <Slider/>
+                    </Grid>
+                    <Grid item className={styles.part}>
+                        <Options/>
+                    </Grid>
                 </Grid>
-                <Grid item  className={styles.part}>
-                    <Options/>
-                </Grid>
-            </Grid>
-        </Container>
+            </Container>
+        </main>
     );
 }
 

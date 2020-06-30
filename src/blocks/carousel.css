@@ -1,0 +1,7 @@
+.CarouselItem,
+.CarouselItem > div{
+    height: 95%;
+}
+[class*='Carousel-indicators'] {
+    margin-top: -20px !important;
+}
