@@ -33,6 +33,7 @@ const useStyle = makeStyles({
         borderRadius: '3px',
     },
     title: {
+        lineHeight: '24px',
         position: 'absolute',
         width: '100%',
         height: '26px',
@@ -45,7 +46,7 @@ const useStyle = makeStyles({
         position: 'absolute',
         top: '7px',
         right: '7px',
-        background: '#47bfbb',
+        background: '#18c0d9',
         borderRadius: '3px',
         color: '#FFF',
         fontSize: 10,

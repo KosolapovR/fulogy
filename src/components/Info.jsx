@@ -1,6 +1,8 @@
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
 import {makeStyles} from "@material-ui/core/styles";
+import {showInfoBlockAC} from "../state/constructor/action";
+import {connect} from "react-redux";
 
 const useStyle = makeStyles({
     root: {
@@ -10,6 +12,7 @@ const useStyle = makeStyles({
         boxShadow: '0 0 5px rgba(0,0,0,0.5)'
     },
     i: {
+        cursor: 'pointer',
         width: '56px',
         background: '#18a8c1',
         fontSize: '20px',
@@ -25,11 +28,11 @@ const useStyle = makeStyles({
     }
 });
 
-function Info(props) {
+function Info({showInfoBLock}) {
     const styles = useStyle();
     return (
         <Grid container className={styles.root}>
-            <Grid item className={styles.i}>
+            <Grid item className={styles.i} onClick={() => {showInfoBLock()}}>
                 i
             </Grid>
             <Grid item className={styles.infoText}>
@@ -39,5 +42,10 @@ function Info(props) {
         </Grid>
     );
 }
+const mapDispatchToProps = dispatch => ({
+    showInfoBLock: () => {
+        dispatch(showInfoBlockAC())
+    }
+});
 
-export default Info;
+export default connect(null, mapDispatchToProps)(Info);

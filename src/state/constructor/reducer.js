@@ -1,4 +1,4 @@
-import {SET_ACTIVE} from "./types";
+import {HIDE_INFO_BLOCK, SET_ACTIVE, SHOW_INFO_BLOCK} from "./types";
 
 const initialState = {
     currentLight: 'Теплый',
@@ -24,13 +24,20 @@ const initialState = {
                 '/assets/cold/3.jpg',
             ]
         }
-    }
+    },
+    showInfoBlock: false,
 };
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_ACTIVE: {
             return {...state, currentLight: action.payload}
+        }
+        case SHOW_INFO_BLOCK: {
+            return {...state, showInfoBlock: true}
+        }
+        case HIDE_INFO_BLOCK: {
+            return {...state, showInfoBlock: false}
         }
         default:
             return state;

@@ -1,4 +1,14 @@
-body{
+@font-face {
+    font-family: 'Fontfabric';
+    src: local('Fontfabric'),
+    url('./fonts/Fontfabric - MullerMedium.otf'),
+    url('./fonts/Fontfabric - MullerBold.otf'),
+    url('./fonts/Fontfabric - MullerExtraBold.otf');
+}
+
+body {
+    font-family: 'Fontfabric';
+    background: #fafafa;
     box-sizing: border-box;
     margin: 0;
 }

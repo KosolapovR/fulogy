@@ -31,7 +31,7 @@ const useStyle = makeStyles({
             display: 'block',
             content: '"1"',
             position: 'absolute',
-            background: '#47bfbb',
+            background: '#18c0d9',
             top: 0,
             right: '45px',
             paddingTop: '2px',

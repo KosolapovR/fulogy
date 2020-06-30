@@ -8,7 +8,7 @@ import {Box} from "@material-ui/core";
 
 const useStyle = makeStyles({
     root: {
-        paddingLeft: '15px',
+        paddingLeft: '35px',
         height: '100%',
     },
     container: {

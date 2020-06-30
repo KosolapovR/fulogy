@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 
 const useStyle = makeStyles({
     active: {
-        background: '#47bfbb',
+        background: '#18c0d9',
         height: '56px',
         padding: '0 30px',
         textAlign: 'center',
@@ -23,7 +23,7 @@ const useStyle = makeStyles({
         }
     },
     blue: {
-        borderBottom: '5px solid #47bfbb',
+        borderBottom: '5px solid #18c0d9',
         height: '56px',
         padding: '0 30px',
         textAlign: 'center',

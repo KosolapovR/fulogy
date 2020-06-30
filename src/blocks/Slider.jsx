@@ -11,7 +11,6 @@ const useStyle = makeStyles({
         height: '100%',
     },
     item: {
-        height: '100%',
     },
     '&:>div': {
         height: '100%',
@@ -63,9 +62,9 @@ function Item(props) {
     const styles = useStyle();
 
     return (
-        <Paper className={styles.item}>
+        <div className={styles.item}>
             <img className={styles.img} src={props.path} alt="image"/>
-        </Paper>
+        </div>
     )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
 import {makeStyles} from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
 
 const useStyle = makeStyles({
     root: {
@@ -12,6 +13,10 @@ const useStyle = makeStyles({
     },
     col: {
         paddingRight: '45px'
+    },
+    paper: {
+        width: 'fit-content',
+        padding: '4px 8px'
     }
 });
 
@@ -22,7 +27,9 @@ function Descriptions(props) {
         <div className={styles.root}>
             <Grid container className={styles.row}>
                 <Grid item xs={5} className={styles.col}>Класс:</Grid>
-                <Grid item xs={7} className={styles.col}>Стандарт</Grid>
+                <Grid item xs={7} className={styles.col}>
+                    <Paper className={styles.paper}>Стандарт</Paper>
+                </Grid>
             </Grid>
             <Grid container className={styles.row}>
                 <Grid item xs={5} className={styles.col}>Потребляемая мощность:</Grid>
