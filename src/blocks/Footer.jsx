@@ -42,13 +42,13 @@ function Footer(props) {
                         <Tab title='Блок питания' status='completed'/>
                     </Grid>
                     <Grid item className={styles.tab}>
-                        <Tab title='Цвет сечения' status='current'/>
+                        <Tab title='Цвет свечения' status='current'/>
                     </Grid>
                     <Grid item className={styles.tab}>
                         <Tab title='Монтаж' status='unfinished'/>
                     </Grid>
                     <Grid item className={styles.tab}>
-                        <Tab title='Цвет сечения' status='unfinished'/>
+                        <Tab title='Корзина' status='unfinished'/>
                     </Grid>
                 </Grid>
             </Container>
