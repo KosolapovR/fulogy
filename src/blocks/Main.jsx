@@ -21,7 +21,7 @@ function Main(props) {
 
     return (
         <main className={styles.root}>
-            <Container maxWidth={'lg'} className={styles.fullHeight}>
+            <Container maxWidth={'xl'} className={styles.fullHeight}>
                 <Grid className={styles.fullHeight} container justify='space-between'>
                     <Grid item className={styles.part}>
                         <Slider/>

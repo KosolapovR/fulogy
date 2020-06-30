@@ -15,7 +15,7 @@ const useStyle = makeStyles({
         cursor: 'pointer',
         width: '56px',
         background: '#18a8c1',
-        fontSize: '20px',
+        fontSize: '26px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'

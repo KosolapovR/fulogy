@@ -40,7 +40,8 @@ const useStyle = makeStyles({
         color: '#fff',
         bottom: 0,
         textAlign: 'center',
-        background: 'rgba(1, 1, 1, .4)'
+        background: 'rgba(1, 1, 1, .4)',
+        fontSize: '0.9em'
     },
     select: {
         position: 'absolute',

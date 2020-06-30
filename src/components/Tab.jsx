@@ -9,14 +9,14 @@ const useStyle = makeStyles({
         padding: '0 30px',
         textAlign: 'center',
         color: '#FFF',
-        fontWeight: 600,
+        fontWeight: 400,
     },
     red: {
-        borderBottom: '5px solid #bf5c5b',
+        borderBottom: '5px solid #e66968',
         height: '56px',
         padding: '0 30px',
         textAlign: 'center',
-        fontWeight: 600,
+        fontWeight: 400,
         cursor: 'pointer',
         '&:hover': {
             background: '#CCC'
@@ -27,7 +27,7 @@ const useStyle = makeStyles({
         height: '56px',
         padding: '0 30px',
         textAlign: 'center',
-        fontWeight: 600,
+        fontWeight: 400,
         cursor: 'pointer',
         '&:hover': {
             background: '#CCC'

@@ -16,7 +16,8 @@ const useStyle = makeStyles({
     },
     paper: {
         width: 'fit-content',
-        padding: '4px 8px'
+        padding: '4px 8px',
+        background: '#eeeeee'
     }
 });
 
@@ -28,7 +29,7 @@ function Descriptions(props) {
             <Grid container className={styles.row}>
                 <Grid item xs={5} className={styles.col}>Класс:</Grid>
                 <Grid item xs={7} className={styles.col}>
-                    <Paper className={styles.paper}>Стандарт</Paper>
+                    <Paper className={styles.paper}>Standart</Paper>
                 </Grid>
             </Grid>
             <Grid container className={styles.row}>

@@ -11,4 +11,5 @@ body {
     background: #fafafa;
     box-sizing: border-box;
     margin: 0;
+    overflow: hidden;
 }

@@ -24,7 +24,7 @@ function Footer(props) {
 
     return (
         <footer className={styles.root}>
-            <Container maxWidth={'lg'}>
+            <Container maxWidth={'xl'}>
                 <Grid container justify='space-between'>
                     <Grid item className={styles.tab}>
                         <Tab title='Вариант кухни' status='completed'/>

@@ -1,16 +1,16 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import {Paper} from '@material-ui/core'
-import Button from "@material-ui/core/Button";
 import {connect} from "react-redux";
 import {makeStyles} from "@material-ui/core/styles";
 import './carousel.css';
 
 const useStyle = makeStyles({
     root: {
+        minHeight: 'calc(100vh - 150px)',
         height: '100%',
     },
     item: {
+        height: '100%',
     },
     '&:>div': {
         height: '100%',
@@ -50,6 +50,7 @@ function Slider({currentLight, lights}) {
         <Carousel
             className={styles.root}
             autoPlay={false}
+            animation='fade'
         >
             {
                 items.map((item, i) => <Item className={styles.item} key={i} path={item}/>)
